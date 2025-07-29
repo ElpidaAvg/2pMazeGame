@@ -209,13 +209,13 @@ while running: # forever loop gia na trexei to paixnidi
 # End:
     if p1_wins == 3:
         screen.fill((43, 207, 240))
-        font = pygame.font.SysFont("Tahoma", 25)
+        font = pygame.font.SysFont("Tahoma", 25, "bold")
         gameovertext = font.render("Congratulations! Player 1 won. Your best time was: " + str(best_time), True, (255, 238, 238))
-        screen.blit(gameovertext, (500, 500))
+        screen.blit(gameovertext, (370, 420))
 
     elif p2_wins == 3:
         screen.fill((43, 207, 240))
-        font = pygame.font.SysFont("Tahoma", 25)
+        font = pygame.font.SysFont("Tahoma", 25, "bold")
         gameovertext = font.render("Congratulations! Player 2 won. Your best time was: " + str(best_time), True, (255, 238, 238))
         screen.blit(gameovertext, (370, 420))
 
